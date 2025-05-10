@@ -23,7 +23,7 @@ namespace adventure {
     export let scoreText = textsprite.create("")
 
     let stateStack: TextLogState[];
-    const padding = 10;
+    const padding = 15;
     const pauseTime = 1500;
     class LogEntry {
         constructor(public isTextEntry: boolean) {
