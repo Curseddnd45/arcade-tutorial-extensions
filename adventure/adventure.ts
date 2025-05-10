@@ -358,7 +358,7 @@ namespace adventure {
             `)
        } else if (thisKind == adventure.Currency.Volunteers) {
             scoreText.setIcon(img`
-            . . . 4 8 . . 4
+            . . . 8 8 . . 4
             . . . 4 4 . . 6
             . . 6 6 6 . 6 .
             . 6 . 6 6 6 . .
