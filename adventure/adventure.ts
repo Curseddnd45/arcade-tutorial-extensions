@@ -13,7 +13,9 @@ namespace adventure {
         //% block="potions"
         Potions,
         //% block="volunteers"
-        Volunteers
+        Volunteers,
+        //% block="stalls"
+        Stalls
     }
 
     export let activeColor = 1;
@@ -366,6 +368,17 @@ namespace adventure {
             . 4 . 6 6 . . .
             . . 6 . . 6 . .
             . . 6 . . 6 . .
+            `)
+       } else if (thisKind == adventure.Currency.Stalls) {
+            scoreText.setIcon(img`
+            . . . . . . . . 
+            . . 5 5 . . . . 
+            . 4 5 5 . . . . 
+            . . . 5 5 5 . . 
+            . . . 5 5 5 . . 
+            e e e e e e e e 
+            e . . . . . . e 
+            e . . . . . . e
             `)
         }
 
