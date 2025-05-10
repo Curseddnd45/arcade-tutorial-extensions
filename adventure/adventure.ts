@@ -11,7 +11,9 @@ namespace adventure {
         //% block="candy"
         Candy,
         //% block="potions"
-        Potions
+        Potions,
+        //% block="volunteers"
+        Volunteers
     }
 
     export let activeColor = 1;
@@ -343,7 +345,7 @@ namespace adventure {
             . . . . . . . .
             . . . . . . . .
             `)
-        } else {
+        } else if (thisKind == adventure.Currency.Potions) {
             scoreText.setIcon(img`
             . . a a a a . .
             . . . a a . . .
@@ -353,6 +355,17 @@ namespace adventure {
             . a 9 a a a a .
             . a a 9 a a a .
             . . a a a a . .
+            `)
+       } else if (thisKind == adventure.Currency.Volunteers) {
+            scoreText.setIcon(img`
+            . . . 4 8 . . 4
+            . . . 4 4 . . 6
+            . . 6 6 6 . 6 .
+            . 6 . 6 6 6 . .
+            . 6 . 6 6 . . .
+            . 4 . 6 6 . . .
+            . . 6 . . 6 . .
+            . . 6 . . 6 . .
             `)
         }
 
